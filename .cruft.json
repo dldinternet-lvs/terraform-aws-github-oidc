@@ -13,7 +13,7 @@
       "description": "Terraform module AWS OIDC integration GitHub Actions",
       "license_text": "(c) 2022 Las Vegas Sands",
       "readme": "README.md",
-      "version": "0.2.0",
+      "version": "0.9.0",
       "package_name": "terraform_aws_github_oidc",
       "packager": "poetry",
       "dynamic": "",
@@ -128,7 +128,7 @@
         "prompt-toolkit": "~3.0.38",
         "pyproject-fmt": "{ version = '~0.13.0' }",
         "python-toolbag": ">=0.23.22",
-        "ruff": ">=0.2.0",
+        "ruff": ">=0.9.0",
         "semver": ">=3.0.0,<4.0.0"
       },
       "poetry_docs_dependencies": {
