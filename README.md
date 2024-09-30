@@ -1,4 +1,4 @@
-# Terraform module AWS OIDC integration GitHub Actions
+# Terraform module AWS OIDC integration GitHub Actions v0.2.0
 
 This [Terraform](https://www.terraform.io/) module manages OpenID Connect (OIDC) integration between [GitHub Actions and AWS](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services).
 
@@ -9,7 +9,7 @@ The module is strict on the claim checks to avoid that creating an OpenID connec
 The module can manage the following:
 
 - The OpenID Connect identity provider for GitHub in your AWS account (via a submodule).
-- A role and assume role policy to check to check OIDC claims.
+- A role and assume role policy to check OIDC claims.
 
 ### Manage the OIDC identity provider
 
@@ -34,7 +34,7 @@ module "oidc_provider" {
 }
 ```
 
-Nest you ca pass the output the one or multiple instances of the module.
+Next, you can pass the output of the provider to multiple instances of the module.
 
 ```hcl
 module "oidc_repo_s3" {

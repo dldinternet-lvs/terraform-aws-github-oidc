@@ -7,3 +7,8 @@ output "conditions" {
   description = "The assume conditions added to the role."
   value       = local.merge_conditions
 }
+
+output "iac_version" {
+  description = "The version of the IaC module."
+  value       = "0.2.0"
+}
