@@ -23,9 +23,6 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 keywords = [ "devops","gitops",]
-exclude = [
-    ".bumpversion.cfg",
-]
 
 
 [tool.poetry.urls]
