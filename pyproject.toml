@@ -7,7 +7,7 @@ requires = [
 
 [tool.poetry]
 name = "terraform-aws-github-oidc"
-version = "0.9.1"
+version = "0.9.2"
 description = "Terraform module AWS OIDC integration GitHub Actions"
 authors = ["Christo De Lange <christo.delange@sands.com>"]
 license = "(c) 2022 Las Vegas Sands"
@@ -78,16 +78,16 @@ pytest-stub = "~1.1.0"
 optional = true
 
 [tool.poetry.group.local-dev.dependencies]
-black = { version = '~23.9.1', extras = ['d']}
+black = { version = '~24.2.0', extras = ['d']}
 bump2version = "~1.0.2-beta6"
-commitizen = { version = '~3.9.1' }
+commitizen = { version = '~2.42.1' }
 cruft = "2.12.0post17"
 gitlint = { version = '~0.19.1' }
-isort = { version = '~5.11.5' }
+isort = { version = '~5.13.2' }
 pre-commit = { version = '~2.21.0' }
 prompt-toolkit = "~3.0.38"
-pyproject-fmt = { version = '~0.13.0' }
-ruff = ">=0.9.1"
+pyproject-fmt = { version = '~1.8.0' }
+ruff = ">=0.3.0"
 semver = ">=3.0.0,<4.0.0"
 
 [tool.poetry.group.docs]
@@ -168,7 +168,7 @@ target-version = "py311"
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 # Allow autofix for all enabled rules (when `--fix`) is provided.
 fixable = ["A", "ANN", "ARG", "B", "BLE", "C", "COM", "D", "DTZ", "E", "EM", "ERA", "EXE", "F", "FBT", "G", "I", "ICN", "INP", "ISC", "N", "PD", "PGH", "PIE", "PL", "PT", "PTH", "Q", "RET", "RUF", "S", "SIM", "T", "TCH", "TID", "TRY", "UP", "W", "YTT"]
-ignore = [ "ANN002", "ANN003", "ANN101", "D211","D213", "S101", "T20", "EM101", "EM102", "ERA001", "D417", "BLE001", "RET504", "UP038", "D212", "D407" ]
+ignore = [ "ANN002", "ANN003", "ANN101", "D211","D213", "S101", "T20", "EM101", "EM102", "ERA001", "D417", "BLE001", "RET504", "UP038", "D212", "D407", "D203" ]
 per-file-ignores = {}
 # Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
 # "FBT", "TRY",
@@ -322,7 +322,7 @@ args = [
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.9.1"
+version = "0.9.2"
 version_files = [
     ".bumpversion.cfg",
     "VERSION",

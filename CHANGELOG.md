@@ -4,6 +4,28 @@
 
 - Add repo_mainline_branch variable (#78)
 
+## v0.9.1 (2024-10-01)
+
+### Feat
+
+- role_and_repos
+
+### Fix
+
+- poetry exclude
+
+## v0.9.0 (2024-09-30)
+
+### Feat
+
+- cruft
+
+## v0 (2024-07-12)
+
+### Feat
+
+- Add repo_mainline_branch variable (#78)
+
 ## v0.7.1 (2023-07-13)
 
 ### Fix
