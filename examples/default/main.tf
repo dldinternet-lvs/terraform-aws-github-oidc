@@ -5,7 +5,7 @@ module "oidc_provider" {
 data "aws_caller_identity" "current" {}
 
 module "oidc_repo_s3" {
-  source = "../../"
+  source = "../../modules/repo"
 
   openid_connect_provider_arn = module.oidc_provider.openid_connect_provider.arn
   repo                        = var.repo_s3
@@ -14,7 +14,7 @@ module "oidc_repo_s3" {
 }
 
 module "oidc_repo_ecr" {
-  source = "../../"
+  source = "../../modules/repo"
 
   openid_connect_provider_arn = module.oidc_provider.openid_connect_provider.arn
   repo                        = var.repo_ecr

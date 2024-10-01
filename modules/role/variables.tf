@@ -33,18 +33,10 @@ variable "openid_connect_provider_arn" {
   type        = string
 }
 
-variable "repo" {
+variable "repos" {
   description = "(Optional) GitHub repository to grant access to assume a role via OIDC. When the repo is set, a role will be created."
-  type        = string
-  default     = null
-  validation {
-    condition     = var.repo == null || can(regex("^.+\\/.+", var.repo))
-    error_message = "Repo name is not matching the pattern <owner>/<repo>."
-  }
-  validation {
-    condition     = var.repo == null || !can(regex("^.*\\*.*$", var.repo))
-    error_message = "Wildcards are not allowed."
-  }
+  type        = list(string)
+  default     = []
 }
 
 variable "repo_mainline_branch" {
@@ -99,4 +91,9 @@ variable "github_oidc_issuer" {
   description = "OIDC issuer for GitHub Actions"
   type        = string
   default     = "token.actions.githubusercontent.com"
+}
+variable "tags" {
+  description = "A map of tags to add to all resources"
+  type        = map(string)
+  default     = {}
 }
