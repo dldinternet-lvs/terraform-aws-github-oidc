@@ -10,5 +10,5 @@ output "conditions" {
 
 output "iac_version" {
   description = "The version of the IaC module."
-  value       = "0.9.2"
+  value       = "0.9.3"
 }

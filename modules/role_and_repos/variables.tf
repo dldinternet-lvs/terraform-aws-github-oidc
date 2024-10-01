@@ -11,7 +11,6 @@ variable "role_repos" {
     policies     = list(string)
     accounts     = list(string)
     environments = list(string)
-    policies     = list(string)
     principals   = list(string)
     main         = string
     role_path    = string
