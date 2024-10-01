@@ -1,7 +1,7 @@
 {
   "template": "git@github.com:SandsB2B/cookiecutter-project-docs.git",
-  "commit": "9d07945aa8fb7d1c7bf836dcf67e70ad3f6b5137",
-  "checkout": "v0.23.5",
+  "commit": "e95d9917c4333b7f7be55b01640218f2b78aae55",
+  "checkout": "v0.23.6",
   "context": {
     "cookiecutter": {
       "authors": "",
@@ -63,6 +63,7 @@
       "pre_commit_eof_fixer_excludes": "",
       "pre_commit_whitespace_fixer_excludes": "",
       "pre_commit_fail_fast": "true",
+      "poetry_package_mode": "false",
       "poetry_keywords": "devops,gitops",
       "poetry_include": "",
       "poetry_exclude": "",
@@ -86,8 +87,8 @@
       "ruff_extend_exclude": "",
       "ruff_ignore": "D203",
       "_extensions": [
-        "toolbag.utils.template_expander.extensions.PythonExtension",
         "toolbag.utils.template_expander.extensions.ExpandCookiecutterTemplateExtension",
+        "toolbag.utils.template_expander.extensions.PythonExtension",
         "toolbag.utils.template_expander.extensions.python_extension.PythonExtension"
       ],
       "_notes": {
@@ -141,9 +142,6 @@
         "pytest-mock": "~3.11.1",
         "pytest-datadir": "~1.5.0",
         "pytest-stub": "~1.1.0"
-      },
-      "poetry_package_mode": {
-        "enabled": "true"
       },
       "poetry_settings": {},
       "poetry_extras": {},
