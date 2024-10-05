@@ -1,7 +1,7 @@
 {
   "template": "git@github.com:SandsB2B/cookiecutter-project-docs.git",
-  "commit": "e95d9917c4333b7f7be55b01640218f2b78aae55",
-  "checkout": "v0.23.6",
+  "commit": "db884672a471012227cd2b7b22276b67aa7c12c6",
+  "checkout": "v0.24.5",
   "context": {
     "cookiecutter": {
       "authors": "",
@@ -83,13 +83,14 @@
       "gh_pages_branches": "main,master,develop",
       "gh_build_branches": "\"*\"",
       "gh_matrix_os": "ubuntu-latest",
+      "gh_aws_oidc_role_name": "github-codeartifact-readonly",
       "pytest_doctest_option": "--doctest-modules",
       "ruff_extend_exclude": "",
       "ruff_ignore": "D203",
       "_extensions": [
-        "toolbag.utils.template_expander.extensions.ExpandCookiecutterTemplateExtension",
+        "toolbag.utils.template_expander.extensions.python_extension.PythonExtension",
         "toolbag.utils.template_expander.extensions.PythonExtension",
-        "toolbag.utils.template_expander.extensions.python_extension.PythonExtension"
+        "toolbag.utils.template_expander.extensions.ExpandCookiecutterTemplateExtension"
       ],
       "_notes": {
         "lists": "Lists have a special meaning for Cookiecutter so we are forced to wrap them in a map or express as a CSV string and split in the template.",

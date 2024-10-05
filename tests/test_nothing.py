@@ -2,6 +2,7 @@
 
 
 class TestNothing:
+
     """Not really testing anything."""
 
     def test_nothing(self) -> None:
