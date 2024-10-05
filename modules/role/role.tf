@@ -1,4 +1,4 @@
-resource "aws_iam_role" "main" {
+resource "aws_iam_role" "repo_role" {
   count = var.repos != null && length(var.repos) > 0 ? 1 : 0
 
   name                 = local.role_name

@@ -2,13 +2,13 @@ variable "openid_connect_provider_arn" {
   description = "Set the openid connect provider ARN when the provider is not managed by the module."
   type        = string
 }
-variable "role_repos" {
+variable "roles_repos" {
   description = "OIDC Idp consumer GitHub repos"
   type = list(object({
     repos        = list(string)
     role         = string
     presets      = list(string)
-    policies     = list(string)
+    #policies     = list(string)
     accounts     = list(string)
     environments = list(string)
     principals   = list(string)
