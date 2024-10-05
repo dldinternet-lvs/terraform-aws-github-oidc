@@ -1,4 +1,4 @@
-# Terraform module AWS OIDC integration GitHub Actions v0.9.3
+# Terraform module AWS OIDC integration GitHub Actions v0.9.4
 
 This [Terraform](https://www.terraform.io/) module manages OpenID Connect (OIDC) integration between [GitHub Actions and AWS](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services).
 

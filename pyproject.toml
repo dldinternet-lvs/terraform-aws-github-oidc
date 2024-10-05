@@ -7,7 +7,7 @@ requires = [
 
 [tool.poetry]
 name = "terraform-aws-github-oidc"
-version = "0.9.3"
+version = "0.9.4"
 description = "Terraform module AWS OIDC integration GitHub Actions"
 authors = ["Christo De Lange <christo.delange@sands.com>"]
 license = "(c) 2022 Las Vegas Sands"
@@ -323,7 +323,7 @@ args = [
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.9.3"
+version = "0.9.4"
 version_files = [
     ".bumpversion.cfg",
     "VERSION",
