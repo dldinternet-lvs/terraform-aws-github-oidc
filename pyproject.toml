@@ -33,7 +33,7 @@ Changelog = "https://github.com/SandsB2B/terraform-aws-github-oidc/blob/main/CHA
 
 [[tool.poetry.source]]
 name = "codeartifact"
-url = "https://artifacts-433714148419.d.codeartifact.us-east-2.amazonaws.com/pypi/pypi/simple/"
+url = "https://gitlab.com/api/v4/projects/72240198/packages/pypi/simple/"
 #priority = "primary"
 
 [[tool.poetry.source]]

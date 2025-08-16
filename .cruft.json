@@ -1,5 +1,5 @@
 {
-  "template": "git@github.com:SandsB2B/cookiecutter-project-docs.git",
+  "template": "git@github.com:DLDInternetLLC/cookiecutter-python-project.git",
   "commit": "db884672a471012227cd2b7b22276b67aa7c12c6",
   "checkout": "v0.24.5",
   "context": {
@@ -20,7 +20,7 @@
       "poetry_version": "~1.8.3",
       "poetry_source_name": "codeartifact",
       "poetry_source_priority": "primary",
-      "poetry_source_url": "https://artifacts-433714148419.d.codeartifact.us-east-2.amazonaws.com/pypi/pypi/simple/",
+      "poetry_source_url": "https://gitlab.com/api/v4/projects/72240198/packages/pypi/simple/",
       "aws_region_tools": "us-east-2",
       "aws_account_tools": "433714148419",
       "prompt_toolkit_version": "~3.0.38",
@@ -154,7 +154,7 @@
       "portray_mkdocs_theme": {},
       "pytest_ini_options": {},
       "tools": {},
-      "_template": "git@github.com:SandsB2B/cookiecutter-project-docs.git",
+      "_template": "git@github.com:DLDInternetLLC/cookiecutter-python-project.git",
       "ruff_extend_exclude_list": [],
       "test_exclude_list": [],
       "src_path_prefix_list": [
